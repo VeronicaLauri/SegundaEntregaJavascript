@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Misterio en Springfield</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Misterio en Springfield</h1>
+        <p>La policía ha encontrado muerto al Sr. Burns y todo indica que fue un homicidio. Se han identificado 6
+            posibles sospechosos, 5 posibles armas homicidas y 5 probables escenas del crimen. Para resolver el misterio
+            deberás adivinar la respuesta a 3 preguntas: quién? dónde? y con qué?, </p>
+        <div id="game-container">
+            <p id="game-output"></p>
+            <div class="game-options">
+                <label for="suspect">Sospechoso:</label>
+                <select id="suspect">
+                    <option disabled selected value="">Elije al sospechoso</option>
+                    <option value="Homero">Homero como el Sr. Verde</option>
+                    <option value="Marge">Marge como la Sra. Azulada</option>
+                    <option value="Bart">Bart como el Profesor Moradillo</option>
+                    <option value="Lisa">Lisa como la Srta. Escarlata</option>
+                    <option value="Krusty el Payaso">Krusty el Payaso como el Coronel Mostaza</option>
+                    <option value="Smithers">Smithers como la Srta. Blanco</option>
+                </select>
+            </div>
+            <div class="game-options">
+                <label for="weapon">Arma:</label>
+                <select id="weapon">
+                    <option disabled selected value="">Elije el arma homicida</option>
+                    <option value="Dona Envenenada">Dona Envenenada</option>
+                    <option value="Barra de Plutonio">Barra de Plutonio</option>
+                    <option value="Saxofón">Saxofón</option>
+                    <option value="Collar de Perlas">Collar de Perlas</option>
+                    <option value="Gomera">Gomera</option>
+                </select>
+            </div>
+            <div class="game-options">
+                <label for="location">Lugar:</label>
+                <select id="location">
+                    <option disabled selected value="">Elije el lugar del crimen</option>
+                    <option value="Calabozo del Androide">Calabozo del Androide</option>
+                    <option value="Planta Nuclear">Planta Nuclear</option>
+                    <option value="Mansión Burns">Mansión Burns</option>
+                    <option value="Estudios Krustylu">Estudios Krustylu</option>
+                    <option value="Casa de Los Simpsons">Casa de Los Simpsons</option>
+                </select>
+            </div>
+            <button onclick="verificarAdivinanza()">Adivinar</button>
+        </div>
+    </div>
+
+    <script src="./misterio.js"></script>
+</body>
+
+</html>
